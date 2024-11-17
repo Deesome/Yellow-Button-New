@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom class for the yellow shadow effect */
+@layer utilities {
+    .shadow-yellow {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .shadow-yellow::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      right: -6px;
+      bottom: -6px;
+      border: 1px solid #000000;
+      background-color: #FFD700; /* Yellow shadow */
+      border-radius: 0.75rem; /* Same as Tailwind's rounded-lg */
+      z-index: -1;
+    }
+
+    .yellow-texture {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .yellow-texture::before {
+      content: '';
+      position: absolute;
+      width: 100vw;
+      inset: 0;
+      height: 100vh;
+      background-color: #FFD700; /* Yellow background */
+      background-image: url('/assets/texture.jpg'); /* Texture */
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8; /* Adjust opacity for transparency */
+      background-blend-mode: overlay; /* Blend mode */
+      z-index: -1; /* Place behind content */
+  }
+  @media (min-width: 861px) and (max-width: 1024px) {
+    .yellow-texture::before {
+        height: 80vh; /* Height for screens between 768px and 1024px */
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 861px) {
+  .yellow-texture::before {
+      height: 90vh; /* Height for screens between 768px and 1024px */
+      
+  }
+}
+
+@media (max-width: 768px) {
+  .yellow-texture::before {
+      height: 70vh; /* Height for screens between 768px and 1024px */
+      
+  }
+}
+
+
+
+  .yellow-texture-new {
+    position: relative;
+    display: inline-block;
+}
+
+.yellow-texture-new::before {
+    content: '';
+    position: absolute;
+    top : -50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    background-color: #FFD700; /* Yellow background */
+    background-image: url('/assets/texture.jpg'); /* Texture */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust opacity for transparency */
+    background-blend-mode: overlay; /* Blend mode */
+    z-index: -10; /* Place behind content */
+}
+
+
+
+    
+
+    
+  }
+  
