@@ -1117,7 +1117,7 @@ video {
   bottom: 0px;
   background-color: #FFD700;
   /* Yellow background */
-  background-image: url('/assets/texture.jpg');
+  background-image: url('/public/texture.jpg');
   /* Texture */
   background-size: cover;
   background-position: center;
