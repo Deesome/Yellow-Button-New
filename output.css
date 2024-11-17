@@ -1070,7 +1070,7 @@ video {
   height: 100vh;
   background-color: #FFD700;
   /* Yellow background */
-  background-image: url('/src/public/texture.jpg');
+  background-image: url('/public/texture.jpg');
   /* Texture */
   background-size: cover;
   background-position: center;
