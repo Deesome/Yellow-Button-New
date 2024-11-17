@@ -36,7 +36,7 @@
       inset: 0;
       height: 100vh;
       background-color: #FFD700; /* Yellow background */
-      background-image: url('/assets/texture.jpg'); /* Texture */
+      background-image: url('/src/public/texture.jpg'); /* Texture */
       background-size: cover;
       background-position: center;
       opacity: 0.8; /* Adjust opacity for transparency */
