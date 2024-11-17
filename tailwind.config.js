@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html","./script.js"],
+  content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily:{
@@ -15,7 +15,7 @@ module.exports = {
         
       },
       backgroundImage: {
-        'background-texture': "url('/assets/texture.jpg')",
+        'background-texture': "url('/public/texture.jpg')",
 
         
       }
