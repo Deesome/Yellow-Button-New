@@ -588,6 +588,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1074,7 +1078,7 @@ video {
   height: 100vh;
   background-color: #FFD700;
   /* Yellow background */
-  background-image: url('./public/texture.jpg');
+  background-image: url('texture compressed.jpg');
   /* Texture */
   background-size: cover;
   background-position: center;
@@ -1121,7 +1125,7 @@ video {
   bottom: 0px;
   background-color: #FFD700;
   /* Yellow background */
-  background-image: url('./public/texture.jpg');
+  background-image: url('texture compressed.jpg');
   /* Texture */
   background-size: cover;
   background-position: center;
@@ -1131,6 +1135,19 @@ video {
   /* Blend mode */
   z-index: -10;
   /* Place behind content */
+}
+
+/*  Animation when video comes out */
+
+#scrollVideo {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#scrollVideo.visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Custom class for the yellow shadow effect */

@@ -32,14 +32,16 @@ const observer = new IntersectionObserver((entries)=>{
         const video = entry.target
         if(entry.isIntersecting){
             video.play()
+            video.classList.add("visible");
         }else{
             video.pause()
+            video.classList.remove("visible");
         }
     })
 
 },{
     root: null, 
-    threshold: 0.4
+    threshold: 0.2
 })
 
 videos.forEach((video)=>{

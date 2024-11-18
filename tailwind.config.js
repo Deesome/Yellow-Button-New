@@ -15,7 +15,7 @@ module.exports = {
         
       },
       backgroundImage: {
-        'background-texture': "url('/public/texture.jpg')",
+        'background-texture': "url('texture compressed.jpg')",
 
         
       }

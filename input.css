@@ -36,7 +36,7 @@
       inset: 0;
       height: 100vh;
       background-color: #FFD700; /* Yellow background */
-      background-image: url('./public/texture.jpg'); /* Texture */
+      background-image: url('texture compressed.jpg'); /* Texture */
       background-size: cover;
       background-position: center;
       opacity: 0.8; /* Adjust opacity for transparency */
@@ -80,13 +80,25 @@
     bottom: 0px;
     
     background-color: #FFD700; /* Yellow background */
-    background-image: url('./public/texture.jpg'); /* Texture */
+    background-image: url('texture compressed.jpg'); /* Texture */
     background-size: cover;
     background-position: center;
     opacity: 0.8; /* Adjust opacity for transparency */
     background-blend-mode: overlay; /* Blend mode */
     z-index: -10; /* Place behind content */
 }
+
+/*  Animation when video comes out */
+#scrollVideo {
+  opacity: 0; 
+  transform: scale(0.9); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+#scrollVideo.visible {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
 
 
 
