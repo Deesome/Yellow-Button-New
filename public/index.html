@@ -361,36 +361,39 @@
 
     <div id="form-card"
         class="hidden w-full lg:w-1/2 fixed top-0 right-0 h-screen bg-custom-yellow shadow-lg transition-transform duration-300 ease-in-out z-50 ">
-        <div class="flex justify-between">
-            <div>
-                <h1 class="pt-[125px] text-3xl lg:text-7xl pl-8 mb-8">LET'S WORK TOGETHER</h1>
-                <p class=" text-base lg:text-lg pl-8 font-inter mb-8">We'd love to hear from you, whether you just want
-                    to shoot the breeze or discuss a potential opportunity to achieve great things together</p>
+        <div class="flex flex-column flex-wrap">
+            <div class="flex justify-between">
+                <div>
+                    <h1 class="pt-[90px] text-3xl lg:text-7xl pl-8 mb-6">LET'S WORK TOGETHER</h1>
+                    <p class=" text-base lg:text-lg pl-8 font-inter mb-6">We'd love to hear from you, whether you just want
+                        to shoot the breeze or discuss a potential opportunity to achieve great things together</p>
+                </div>
+                <img id="close"
+                    class="object-cover h-[48px] pt-[20px] pr-[40px] transition-all duration-300 ease-in-out transform hover:scale-105"
+                    src="./close.png" alt="Creative Services Form">
             </div>
-            <img id="close"
-                class="object-cover h-[48px] pt-[20px] pr-[40px] transition-all duration-300 ease-in-out transform hover:scale-105"
-                src="./close.png" alt="Creative Services Form">
+    
+            <div>
+                <form id="contact-form" class="w-[93%] mx-auto" action="https://formspree.io/f/mkgnbyvd" method="POST">
+                    <input
+                        class="w-full font-inter p-4 mb-2 border-2 border-custom-black rounded-xl text-lg lg:text-2xl mx-auto"
+                        type="text" placeholder="Your name">
+                    <input
+                        class="w-full font-inter p-4 mb-2 border-2 border-custom-black rounded-xl text-lg lg:text-2xl mx-auto"
+                        type="text" placeholder="Your email address">
+                    <input
+                        class="w-full font-inter p-4 mb-2 border-2 border-custom-black rounded-xl text-lg lg:text-2xl mx-auto"
+                        type="text" placeholder="Your contact number">
+                    <textarea
+                        class="w-full font-inter p-4 mb-2 border-2 border-custom-black rounded-xl text-lg lg:text-2xl mx-auto"
+                        rows="4" placeholder="Add a message" name="message" id="message"></textarea>
+                    <button type="submit"
+                        class="w-full p-4 mb-2 border-2 bg-custom-black text-custom-yellow border-custom-black rounded-xl text-xl lg:text-3xl mx-auto transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 active:bg-custom-dark">SEND</button>
+    
+                </form>
+            </div>
         </div>
-
-        <div>
-            <form id="contact-form" class="w-[93%] mx-auto" action="https://formspree.io/f/mkgnbyvd" method="POST">
-                <input
-                    class="w-full font-inter p-4 mb-4 border-2 border-custom-black rounded-xl text-xl lg:text-3xl mx-auto"
-                    type="text" placeholder="Your name">
-                <input
-                    class="w-full font-inter p-4 mb-4 border-2 border-custom-black rounded-xl text-xl lg:text-3xl mx-auto"
-                    type="text" placeholder="Your email address">
-                <input
-                    class="w-full font-inter p-4 mb-4 border-2 border-custom-black rounded-xl text-xl lg:text-3xl mx-auto"
-                    type="text" placeholder="Your contact number">
-                <textarea
-                    class="w-full font-inter p-4 mb-4 border-2 border-custom-black rounded-xl text-xl lg:text-3xl mx-auto"
-                    rows="4" placeholder="Add a message" name="message" id="message"></textarea>
-                <button type="submit"
-                    class="w-full p-4 mb-4 border-2 bg-custom-black text-custom-yellow border-custom-black rounded-xl text-xl lg:text-3xl mx-auto transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 active:bg-custom-dark">SEND</button>
-
-            </form>
-        </div>
+        
     </div>
 
 
